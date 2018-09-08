@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block optional_code %}
+    <link rel="stylesheet" href="/static/css/w3original.css"/>
+{% endblock %}
+
+{% block navbar %}
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <!-- Header -->
+
+    <div class="w3-display-container w3-animate-opacity">
+        <img src="http://people.cs.ksu.edu/~caguirre97/images/KSTATECODESbanner.png" alt="kstate codes" style="width:100%;min-height:350px;max-height:600px;">
+        <div class="w3-container w3-margin-bottom">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScZLCyCSh1EU-NDptptY-lw-h1IoWIqT7cLsKl-UVQ63IhQig/viewform?usp=sf_link">
+                <button class="w3-button w3-black enroll-button w3-xlarge w3-theme">Sign Up Now</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Learn To Code With Python</h1>
+                <h5 class="w3-padding-32">Learn the basics of programming with a high level programming language that is used across academia.</h5>
+
+                <p class="w3-text-grey">Python is a powerful, extensive and yet relatively easy to learn programming language. It is used across both, industry and academia in areas such as:</p>
+                <ul class="w3-text-grey">
+                    <li>Machine Learning</li>
+                    <li>Data Analysis and Representation</li>
+                    <li>Web Development and Scrapping</li>
+                    <li>Scripting and more!</li>
+                </ul>
+            </div>
+
+            <div class="w3-third w3-center">
+                <img class="w3-padding-64" src="http://people.cs.ksu.edu/~caguirre97/images/python_logo.png" alt="python logo" id="python_logo">
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+                <i class="material-icons w3-padding-64 w3-text-blue w3-margin-right">class</i>
+            </div>
+
+            <div class="w3-twothird">
+                <h1>K-State Codes' Python Class</h1>
+                <h5 class="w3-padding-32">K-State Codes offers a 0 credit introduction to programming class in python sponsored by the <a href="http://www.kddresearch.com/">Knowledge Discovery in Databases Laboratory (KDD)</a> at K-State.</h5>
+
+                <p class="w3-text-grey">This class is designed for beginners with no experience in programming, <strong>no prerequisites!</strong> K-State Codes welcomes students from all colleges in K-State to encourage connections and multidisciplinary research. This is a fast-paced course that will cover the basics in programming along some useful technologies used across academia such as:</p>
+                <ul class="w3-text-grey">
+                    <li>File Handling</li>
+                    <li>Web Scraping</li>
+                    <li>OpenCV</li>
+                    <li>SciPy</li>
+                    <li>Machine Learning</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScZLCyCSh1EU-NDptptY-lw-h1IoWIqT7cLsKl-UVQ63IhQig/viewform?usp=sf_link">
+            <button class="w3-margin w3-xlarge">Sign Up Now</button>
+        </a>
+
+        <p class="w3-xlarge">Contact Us!</p>
+        <p>caguirre97@ksu.edu</p>
+    </div>
+{% endblock %}
+

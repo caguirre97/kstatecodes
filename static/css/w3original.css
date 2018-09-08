@@ -1,0 +1,25 @@
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Lato", sans-serif
+}
+.w3-bar,h1,button {
+    font-family: "Montserrat", sans-serif
+}
+.fa-anchor,.material-icons {
+    font-size:300px
+}
+
+img {
+    width: 100%;
+}
+
+#python_logo {
+    padding-left: 60px;
+    padding-bottom: 60px;
+}
+
+.enroll-button {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
