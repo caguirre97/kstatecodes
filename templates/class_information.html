@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block optional_code %}
+    <link rel="stylesheet" href="/static/css/w3original.css"/>
+    <link rel="stylesheet" href="/static/css/class_info.css">
+{% endblock %}
+
+{% block navbar %}
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+            <a href="/class" class="w3-bar-item w3-button w3-padding-large w3-white">Class Information</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="/" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+            <a href="/class" class="w3-bar-item w3-button w3-padding-large w3-white">Class Information</a>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content w3-margin-bottom w3-blue">
+            <h1 class="w3-center w3-xxlarge">K-State Codes Python Class Information</h1>
+        </div>
+    </div>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+
+            <h3 class="w3-center">Class Overview</h3>
+            <div class="w3-half">
+                <ul class="w3-text">
+                    <li>Instructor: Carlos Aguirre</li>
+                    <li>Telephone: (816) 288-7115</li>
+                    <li>Office: Durland Hall 2221</li>
+                    <li>Office hours: Tuesday and Thursday 12pm - 1pm (and appointment)</li>
+                </ul>
+            </div>
+            <div class="w3-half">
+                <ul class="w3-text">
+                    <li>Class Time: Tuesday and Thursday 4:30pm - 5:20pm</li>
+                    <li>Class Room: Durland Hall 1117</li>
+                    <li>Email: caguirre97@ksu.edu</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+
+            <h3 class="w3-center">Class Facts</h3>
+            <div class="w3-half">
+                <ul class="w3-text">
+                    <li>Zero Credit Introduction to Python - Free Course</li>
+                    <li>The course is length flexible</li>
+                    <li>Homework is optional</li>
+                    <li>Attendance is optional</li>
+                    <li>Personal project is optional</li>
+                    <li>No exams or final</li>
+                    <li>All notes and lectures will be posted here!</li>
+                </ul>
+            </div>
+            <div class="w3-half">
+                <ul class="w3-text">
+                    <li>Python3 will be used</li>
+                    <li>Terminal or Command Prompt use will be recommended</li>
+                    <li>Recommend using personal laptop, but computers will be available</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <h3 class="w3-center">Tentative Schedule</h3>
+            <table style="width:100%">
+                <tr>
+                    <th>Week Number</th>
+                    <th>Topics</th>
+                </tr>
+                <tr>
+                    <td class="w3-center">1</td>
+                    <td>Python Overview, Printing, and Basic Operations, User Input</td>
+                </tr>
+                <tr>
+                    <td class="w3-center">2</td>
+                    <td>User Input, Floating Point, String Formatting</td>
+                </tr>
+                <tr>
+                    <td class="w3-center">3</td>
+                    <td>Conditional Statements, Loops</td>
+                </tr>
+                <tr>
+                    <td class="w3-center">4</td>
+                    <td>Loops, Functions</td>
+                </tr>
+                <tr>
+                    <td class="w3-center">5</td>
+                    <td>Functions, Multiple Files</td>
+                </tr>
+                <tr>
+                    <td class="w3-center">6</td>
+                    <td>Lists, Dictionaries</td>
+                </tr>
+                <tr>
+                    <td class="w3-center">7</td>
+                    <td>Special Interests</td>
+                </tr>
+                <tr>
+                    <td class="w3-center">8</td>
+                    <td>Special Interests*</td>
+                </tr>
+            </table>
+            <div class="w3-text-gray">* Course is intended to run for 8 weeks, depending upon pace, attendance and interest</div>
+        </div>
+    </div>
+{% endblock %}
+
