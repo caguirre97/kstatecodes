@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block optional_code %}
+    <link rel="stylesheet" href="/static/css/w3original.css"/>
+    <link rel="stylesheet" href="/static/css/class_modules.css">
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/static/js/class_modules.js"></script>
+{% endblock %}
+
+{% block navbar %}
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+            <a href="/class" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Class Information</a>
+            <a href="/modules" class="w3-bar-item w3-button w3-padding-large w3-white">Modules</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="/" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+            <a href="/class" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Class Information</a>
+            <a href="/modules" class="w3-bar-item w3-button w3-padding-large w3-white">Modules</a>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content w3-margin-bottom w3-blue">
+            <h1 class="w3-center w3-xxlarge">Module Files per Week</h1>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <button class="collapsible">Week 1</button>
+        <div class="content">
+            <div class="w3-card-2">
+                <div class="w3-container">
+                    <p>Command line Guide for Windows and MAC/Linux: <a href="http://people.cs.ksu.edu/~caguirre97/files/CommandGuide.txt" download>CommandGuide.txt</a></p>
+                    <p>Tuesday Presentation: <a href="http://people.cs.ksu.edu/~caguirre97/files/wk1tue.pptx" download>wk1tue.pptx</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
