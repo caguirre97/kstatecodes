@@ -17,7 +17,7 @@ def class_info():
 def class_modules():
     return render_template("class_modules.html")
 
-@app.route("/api", methods="POST")
+@app.route("/api")
 def api():
     try:
         email = request.form['email']
