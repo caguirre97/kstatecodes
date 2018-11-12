@@ -16,16 +16,16 @@ def class_info():
 @app.route('/modules')
 def class_modules():
     return render_template("class_modules.html")
-
-@app.route("/api")
-def api():
-    try:
-        email = request.form['email']
-        subject = request.form['subject']
-        body = request.form['body']
-        return jsonify({"message": "success"})
-    except:
-        return jsonify({"message": "error"})
+#
+# @app.route("/api")
+# def api():
+#     try:
+#         email = request.form['email']
+#         subject = request.form['subject']
+#         body = request.form['body']
+#         return jsonify({"message": "success"})
+#     except:
+#         return jsonify({"message": "error"})
 
 
 if __name__ == '__main__':
